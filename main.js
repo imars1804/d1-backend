@@ -23,7 +23,7 @@ class User {
     }
 
     getBookNames() {
-        let arr = [];
+        const arr = [];
         for(let i = 0; i < this.libros.length; i++) {
             arr.push(this.libros[i].nombre);
         }
@@ -32,7 +32,7 @@ class User {
 
 }
 
-let Juan = new User("Juan", "Gonzalez", [
+const Juan = new User("Juan", "Gonzalez", [
     {nombre: "La Selección", autor:"Kiera Cass"},
     {nombre: "Hush Hush", autor:"Becca Fitzpatrick"}
 ], ["Zeus", "Pelusa", "Hachi", "Kira"]);
